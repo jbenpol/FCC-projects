@@ -2,12 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width:device-width; initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">Programmer Survey</h1>
-    <p id="description">Thank you for taking the time to fill out the form!</p>
-    <form id="survey-form">
+    <header>
+      <h1 id="title">Programmer Survey</h1>
+      <p id="description" class="subtitle">Thank you for taking the time to fill out the form!</p>
+    </header>
+    <!-- would have "action" attr if I was actually submitting this -->
+    <form id="survey-form" method="POST">
       <fieldset>
         <legend>Contact Information</legend>
         <label id="name-label" for="name">Please enter your name:</label>
@@ -22,25 +26,27 @@
         <label><input id="student-yes" name="student-status" type="radio" value="y" />Yes</label>
         <label><input id="student-no" name="student-status" type="radio" value="n" checked />No</label>
       </fieldset>
-      <label id="exp-label" for="dropdown">How many years have you worked in the industry?</label>
-      <select id="dropdown" name="yrs-exp">
-        <option value="1">Less than 1 year</option>
-        <option value="2">1-2 years</option>
-        <option value="3">3-5 years</option>
-        <option value="4">5-10 years</option>
-        <option value="5">10+ years</option>
-      </select>
+      <fieldset>
+        <legend>How many years have you worked in the industry?</legend>
+        <select id="dropdown" name="yrs-exp">
+          <option value="1">Less than 1 year</option>
+          <option value="2">1-2 years</option>
+          <option value="3">3-5 years</option>
+          <option value="4">5-10 years</option>
+          <option value="5">10+ years</option>
+        </select>
+      </fieldset>
       <fieldset>
         <legend>What languages are you familiar with?</legend>
-        <p id="lang-description">Please select all languages you have used as part of a job.</p>
+        <p id="lang-description" class="subtitle">Please select all languages you have used as part of a job.</p>
         <label><input name="lang" type="checkbox" value="java" />Java</label>
         <label><input name="lang" type="checkbox" value="ccpp" />C/C++</label>
-        <label><input name="lang" type="checkbox" value="C#" />C#</label>
+        <label><input name="lang" type="checkbox" value="csh" />C#</label>
         <label><input name="lang" type="checkbox" value="python" />Python</label>
         <label><input name="lang" type="checkbox" value="js" />JavaScript</label>
         <label><input name="lang" type="checkbox" value="sql" />SQL</label>
         <label>Other</label>
-        <textarea name="lang" type="textarea" rows="1" placeholder="Enter additional languages..."></textarea>
+        <textarea form="survey-form" name="other_lang" type="textarea" rows="1" placeholder="Enter additional languages, comma-separated..."></textarea>
       </fieldset>
       <input id="submit" type="submit" value="submit" />
     </form>

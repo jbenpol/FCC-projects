@@ -1,0 +1,75 @@
+
+body {
+  font: 16px Tahoma;
+}
+
+header {
+  width: 800px;
+  min-width: 350px;
+  padding-bottom: 15px;
+  background-color: red;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+#description {
+  font-size: 0.8rem;
+}
+
+.subtitle {
+  margin-top: 0;
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin: 0 auto;
+  padding: 20px 0 10px 0;
+  width: 800px;
+  min-width: 350px;
+  color: #d0d0d0;
+  background-color: #0000ff;
+  
+}
+
+/* TODO Continue aligning inputs */
+
+fieldset {
+  width: 100%;
+  margin-left: 100px;
+  border: 0;
+  
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: 1000;
+  margin-left: -30px;
+  padding: 0;
+}
+
+label {
+  display: block;
+  padding: 2px;
+}
+
+#dropdown {
+  margin-top: 5px;
+}
+
+#lang-description {
+  margin-bottom: 5px;
+}
+
+textarea {
+  font-size: 0.8rem;
+  min-width: 50%;
+  min-height: 50px;
+}

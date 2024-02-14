@@ -7,3 +7,6 @@ Initial commit is very barebones. The CSS is currently empty, so it's extremely 
 * Flesh out the survey with a couple more useful questions.
 * Start styling the page. Classes should be set up to get going.
  * Add a "techy" background image. Circuitry, floating monospaced characters, etc.
+
+ 2/14:
+ * Added some initial styling. Mostly layout-focused, background colors are just to show size of elements/padding. Alignment still needs some work, but it's servicable for now. I should add a few more questions as mentioned and then finish it up.
